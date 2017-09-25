@@ -1,0 +1,1004 @@
+mysqld, Version: 5.7.18-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.18-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2017-07-17T03:00:12.977268Z
+# User@Host: root[root] @ localhost []  Id:     5
+# Query_time: 0.010965  Lock_time: 0.007829 Rows_sent: 0  Rows_examined: 2
+SET timestamp=1500260412;
+DELETE FROM mysql.user WHERE user NOT IN ('mysql.sys', 'mysqlxsys', 'root') OR host NOT IN ('localhost');
+mysqld, Version: 5.7.18-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2017-07-20T17:04:11.619897Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.343153  Lock_time: 0.062735 Rows_sent: 4  Rows_examined: 8
+SET timestamp=1500570251;
+select schema_name as name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name;
+# Time: 2017-07-20T17:04:11.838984Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.139559  Lock_time: 0.000162 Rows_sent: 4  Rows_examined: 8
+SET timestamp=1500570251;
+select schema_name as name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name;
+# Time: 2017-07-20T17:04:12.023862Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.154556  Lock_time: 0.015526 Rows_sent: 61  Rows_examined: 61
+SET timestamp=1500570252;
+select table_name, table_type, table_comment
+from information_schema.tables
+where table_schema = 'information_schema';
+# Time: 2017-07-20T17:04:12.224385Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.131904  Lock_time: 0.003147 Rows_sent: 606  Rows_examined: 1212
+SET timestamp=1500570252;
+select
+ordinal_position,
+column_name,
+column_type,
+column_default,
+table_name,
+column_comment,
+is_nullable,
+extra
+from information_schema.columns
+where table_schema = 'information_schema'
+order by table_name, ordinal_position;
+# Time: 2017-07-20T17:05:46.264826Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     7
+# Query_time: 0.055742  Lock_time: 0.000147 Rows_sent: 4  Rows_examined: 8
+SET timestamp=1500570346;
+select schema_name as name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name;
+# Time: 2017-07-20T17:05:46.325433Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     7
+# Query_time: 0.033733  Lock_time: 0.000144 Rows_sent: 4  Rows_examined: 8
+SET timestamp=1500570346;
+select schema_name as name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name;
+# Time: 2017-07-20T17:05:46.362283Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     7
+# Query_time: 0.021947  Lock_time: 0.001000 Rows_sent: 61  Rows_examined: 61
+SET timestamp=1500570346;
+select table_name, table_type, table_comment
+from information_schema.tables
+where table_schema = 'information_schema';
+# Time: 2017-07-20T17:05:46.432875Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     7
+# Query_time: 0.043439  Lock_time: 0.001911 Rows_sent: 606  Rows_examined: 1212
+SET timestamp=1500570346;
+select
+ordinal_position,
+column_name,
+column_type,
+column_default,
+table_name,
+column_comment,
+is_nullable,
+extra
+from information_schema.columns
+where table_schema = 'information_schema'
+order by table_name, ordinal_position;
+# Time: 2017-07-20T17:05:48.122838Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     8
+# Query_time: 0.049761  Lock_time: 0.000114 Rows_sent: 4  Rows_examined: 8
+SET timestamp=1500570348;
+select schema_name as name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name;
+# Time: 2017-07-20T17:05:48.178391Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     8
+# Query_time: 0.031555  Lock_time: 0.000526 Rows_sent: 4  Rows_examined: 8
+SET timestamp=1500570348;
+select schema_name as name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name;
+# Time: 2017-07-20T17:05:48.212530Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     8
+# Query_time: 0.019819  Lock_time: 0.000260 Rows_sent: 61  Rows_examined: 61
+SET timestamp=1500570348;
+select table_name, table_type, table_comment
+from information_schema.tables
+where table_schema = 'information_schema';
+# Time: 2017-07-20T17:05:48.327125Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     8
+# Query_time: 0.096073  Lock_time: 0.002121 Rows_sent: 606  Rows_examined: 1212
+SET timestamp=1500570348;
+select
+ordinal_position,
+column_name,
+column_type,
+column_default,
+table_name,
+column_comment,
+is_nullable,
+extra
+from information_schema.columns
+where table_schema = 'information_schema'
+order by table_name, ordinal_position;
+# Time: 2017-07-20T17:06:28.967693Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.038716  Lock_time: 0.000144 Rows_sent: 5  Rows_examined: 10
+SET timestamp=1500570388;
+select schema_name as name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name;
+# Time: 2017-07-20T17:06:29.029959Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.026512  Lock_time: 0.000173 Rows_sent: 5  Rows_examined: 10
+SET timestamp=1500570389;
+select schema_name as name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name;
+# Time: 2017-07-20T17:06:29.054585Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.012052  Lock_time: 0.000354 Rows_sent: 61  Rows_examined: 61
+SET timestamp=1500570389;
+select table_name, table_type, table_comment
+from information_schema.tables
+where table_schema = 'information_schema';
+# Time: 2017-07-20T17:06:29.144331Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.035945  Lock_time: 0.002046 Rows_sent: 606  Rows_examined: 1212
+SET timestamp=1500570389;
+select
+ordinal_position,
+column_name,
+column_type,
+column_default,
+table_name,
+column_comment,
+is_nullable,
+extra
+from information_schema.columns
+where table_schema = 'information_schema'
+order by table_name, ordinal_position;
+# Time: 2017-07-20T17:06:29.182946Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.006626  Lock_time: 0.000183 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1500570389;
+select table_name, table_type, table_comment
+from information_schema.tables
+where table_schema = 'test';
+# Time: 2017-07-20T17:06:29.199521Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.006708  Lock_time: 0.001498 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1500570389;
+select
+ordinal_position,
+column_name,
+column_type,
+column_default,
+table_name,
+column_comment,
+is_nullable,
+extra
+from information_schema.columns
+where table_schema = 'test'
+order by table_name, ordinal_position;
+# Time: 2017-07-20T17:06:29.244305Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.029270  Lock_time: 0.008678 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1500570389;
+select
+  table_name,
+  index_name,
+  group_concat(column_name order by seq_in_index separator '\n') as column_names,
+  non_unique
+from information_schema.statistics
+where table_schema = 'test' and
+      index_schema = 'test' and
+      index_name <> 'PRIMARY'
+group by
+  table_catalog,
+  table_schema,
+  table_name,
+  index_name,
+  index_type,
+  non_unique;
+# Time: 2017-07-20T17:06:29.471412Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.211070  Lock_time: 0.121773 Rows_sent: 0  Rows_examined: 48
+SET timestamp=1500570389;
+select
+ specific_name,
+ routine_type,
+ routine_definition,
+ routine_comment,
+ dtd_identifier
+from information_schema.routines
+where routine_schema = 'test';
+# Time: 2017-07-20T17:06:29.594363Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.101458  Lock_time: 0.000893 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1500570389;
+select table_name from information_schema.tables
+where table_schema collate utf8_general_ci = 'information_schema' and table_name collate utf8_general_ci = 'parameters';
+# Time: 2017-07-20T17:06:29.615707Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.014195  Lock_time: 0.002708 Rows_sent: 0  Rows_examined: 83
+SET timestamp=1500570389;
+select specific_name,
+parameter_name,
+parameter_mode,
+dtd_identifier
+from information_schema.parameters
+where specific_schema = 'test' and ordinal_position > 0
+order by specific_name, ordinal_position;
+# Time: 2017-07-20T17:06:30.630447Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 1.005988  Lock_time: 0.003218 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1500570390;
+select
+  c.constraint_name,
+  c.table_name,
+  c.constraint_type,
+  group_concat(u.column_name order by u.ordinal_position separator '\n' ) as column_names,
+  u.referenced_table_schema,
+  u.referenced_table_name,
+  group_concat(u.referenced_column_name order by u.position_in_unique_constraint separator '\n') as ref_column_names,
+  r.match_option,
+  r.update_rule,
+  r.delete_rule
+from information_schema.table_constraints c
+  left join information_schema.key_column_usage u on
+      u.constraint_schema   = c.constraint_schema
+  and u.constraint_name     = c.constraint_name
+  and u.table_name = c.table_name
+  and u.table_schema = 'test'
+  and ((c.constraint_type = 'UNIQUE' and u.referenced_table_name is null) or c.constraint_type <> 'UNIQUE')
+  left join information_schema.referential_constraints r on
+      r.constraint_schema   = c.constraint_schema
+  and r.constraint_name     = c.constraint_name
+where c.table_schema = 'test'
+  and u.table_schema = 'test'
+group by
+    c.constraint_schema
+  , c.constraint_name
+  , c.table_schema
+  , c.table_name
+  , c.constraint_type
+  , u.referenced_table_schema
+  , u.referenced_table_name
+  , r.match_option
+  , r.update_rule
+  , r.delete_rule
+order by
+    c.table_schema
+  , c.table_name
+  , c.constraint_schema
+  , c.constraint_name;
+# Time: 2017-07-20T17:06:30.916733Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.272800  Lock_time: 0.002446 Rows_sent: 0  Rows_examined: 2
+SET timestamp=1500570390;
+select
+trigger_name,
+event_object_table,
+event_manipulation,
+action_timing
+from information_schema.triggers
+where trigger_schema = 'test';
+# Time: 2017-07-20T17:06:30.929415Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.003532  Lock_time: 0.000923 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1500570390;
+select table_name, view_definition
+from information_schema.views
+where table_schema = 'test';
+# Time: 2017-07-20T17:06:30.959620Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.022127  Lock_time: 0.012381 Rows_sent: 0  Rows_examined: 48
+SET timestamp=1500570390;
+select specific_name, routine_definition
+from information_schema.routines
+where routine_schema = 'test';
+# Time: 2017-07-20T17:06:31.137031Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    10
+# Query_time: 0.170791  Lock_time: 0.001109 Rows_sent: 0  Rows_examined: 2
+SET timestamp=1500570391;
+select
+trigger_name,
+event_object_table,
+action_statement
+from information_schema.triggers
+where trigger_schema = 'test';
+# Time: 2017-07-20T17:08:32.809393Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    11
+# Query_time: 0.026089  Lock_time: 0.005282 Rows_sent: 0  Rows_examined: 48
+use test;
+SET timestamp=1500570512;
+SELECT * FROM information_schema.routines WHERE routine_schema = 'test' ORDER BY routine_name ;
+# Time: 2017-07-20T17:08:32.844089Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    12
+# Query_time: 0.013846  Lock_time: 0.005375 Rows_sent: 0  Rows_examined: 48
+SET timestamp=1500570512;
+SELECT SPECIFIC_NAME, ROUTINE_TYPE, DTD_IDENTIFIER, IS_DETERMINISTIC, SQL_DATA_ACCESS, SECURITY_TYPE, DEFINER FROM `information_schema`.`ROUTINES` WHERE `ROUTINE_SCHEMA` = 'test' ;
+# Time: 2017-07-20T17:08:38.216413Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    11
+# Query_time: 0.003245  Lock_time: 0.002418 Rows_sent: 8  Rows_examined: 9
+SET timestamp=1500570518;
+SELECT Engine, Support FROM `information_schema`.`engines` WHERE SUPPORT IN ('DEFAULT', 'YES') ;
+# Time: 2017-07-20T17:08:38.224058Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    11
+# Query_time: 0.002368  Lock_time: 0.000097 Rows_sent: 41  Rows_examined: 82
+SET timestamp=1500570518;
+SELECT * FROM `information_schema`.`character_sets` ORDER BY `character_set_name` ASC ;
+# Time: 2017-07-20T17:08:48.375304Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    11
+# Query_time: 0.000877  Lock_time: 0.000202 Rows_sent: 27  Rows_examined: 249
+SET timestamp=1500570528;
+SELECT * FROM `information_schema`.`collations` WHERE character_set_name = 'utf8' ORDER BY `collation_name` ASC ;
+# Time: 2017-07-20T17:08:48.512053Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    12
+# Query_time: 0.002744  Lock_time: 0.000915 Rows_sent: 0  Rows_examined: 48
+SET timestamp=1500570528;
+SELECT SPECIFIC_NAME, ROUTINE_TYPE, DTD_IDENTIFIER, IS_DETERMINISTIC, SQL_DATA_ACCESS, SECURITY_TYPE, DEFINER FROM `information_schema`.`ROUTINES` WHERE `ROUTINE_SCHEMA` = 'test' ;
+# Time: 2017-07-20T17:09:51.217056Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    14
+# Query_time: 0.025128  Lock_time: 0.000385 Rows_sent: 5  Rows_examined: 10
+SET timestamp=1500570591;
+select schema_name as name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name;
+# Time: 2017-07-20T17:09:51.261698Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    14
+# Query_time: 0.012187  Lock_time: 0.000204 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1500570591;
+select table_name, table_type, table_comment
+from information_schema.tables
+where table_schema = 'test';
+# Time: 2017-07-20T17:09:51.290496Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    14
+# Query_time: 0.003105  Lock_time: 0.000904 Rows_sent: 4  Rows_examined: 8
+SET timestamp=1500570591;
+select
+ordinal_position,
+column_name,
+column_type,
+column_default,
+table_name,
+column_comment,
+is_nullable,
+extra
+from information_schema.columns
+where table_schema = 'test'
+order by table_name, ordinal_position;
+# Time: 2017-07-20T17:09:51.317770Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    14
+# Query_time: 0.007086  Lock_time: 0.000812 Rows_sent: 0  Rows_examined: 2
+SET timestamp=1500570591;
+select
+  table_name,
+  index_name,
+  group_concat(column_name order by seq_in_index separator '\n') as column_names,
+  non_unique
+from information_schema.statistics
+where table_schema = 'test' and
+      index_schema = 'test' and
+      index_name <> 'PRIMARY'
+group by
+  table_catalog,
+  table_schema,
+  table_name,
+  index_name,
+  index_type,
+  non_unique;
+# Time: 2017-07-20T17:09:51.347944Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    14
+# Query_time: 0.018342  Lock_time: 0.005672 Rows_sent: 0  Rows_examined: 48
+SET timestamp=1500570591;
+select
+ specific_name,
+ routine_type,
+ routine_definition,
+ routine_comment,
+ dtd_identifier
+from information_schema.routines
+where routine_schema = 'test';
+# Time: 2017-07-20T17:09:51.449696Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    14
+# Query_time: 0.091017  Lock_time: 0.000168 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1500570591;
+select table_name from information_schema.tables
+where table_schema collate utf8_general_ci = 'information_schema' and table_name collate utf8_general_ci = 'parameters';
+# Time: 2017-07-20T17:09:51.463725Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    14
+# Query_time: 0.003151  Lock_time: 0.000964 Rows_sent: 0  Rows_examined: 83
+SET timestamp=1500570591;
+select specific_name,
+parameter_name,
+parameter_mode,
+dtd_identifier
+from information_schema.parameters
+where specific_schema = 'test' and ordinal_position > 0
+order by specific_name, ordinal_position;
+# Time: 2017-07-20T17:09:51.851280Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    14
+# Query_time: 0.378982  Lock_time: 0.000413 Rows_sent: 2  Rows_examined: 12
+SET timestamp=1500570591;
+select
+  c.constraint_name,
+  c.table_name,
+  c.constraint_type,
+  group_concat(u.column_name order by u.ordinal_position separator '\n' ) as column_names,
+  u.referenced_table_schema,
+  u.referenced_table_name,
+  group_concat(u.referenced_column_name order by u.position_in_unique_constraint separator '\n') as ref_column_names,
+  r.match_option,
+  r.update_rule,
+  r.delete_rule
+from information_schema.table_constraints c
+  left join information_schema.key_column_usage u on
+      u.constraint_schema   = c.constraint_schema
+  and u.constraint_name     = c.constraint_name
+  and u.table_name = c.table_name
+  and u.table_schema = 'test'
+  and ((c.constraint_type = 'UNIQUE' and u.referenced_table_name is null) or c.constraint_type <> 'UNIQUE')
+  left join information_schema.referential_constraints r on
+      r.constraint_schema   = c.constraint_schema
+  and r.constraint_name     = c.constraint_name
+where c.table_schema = 'test'
+  and u.table_schema = 'test'
+group by
+    c.constraint_schema
+  , c.constraint_name
+  , c.table_schema
+  , c.table_name
+  , c.constraint_type
+  , u.referenced_table_schema
+  , u.referenced_table_name
+  , r.match_option
+  , r.update_rule
+  , r.delete_rule
+order by
+    c.table_schema
+  , c.table_name
+  , c.constraint_schema
+  , c.constraint_name;
+# Time: 2017-07-20T17:09:52.206247Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    14
+# Query_time: 0.331986  Lock_time: 0.001457 Rows_sent: 0  Rows_examined: 2
+SET timestamp=1500570592;
+select
+trigger_name,
+event_object_table,
+event_manipulation,
+action_timing
+from information_schema.triggers
+where trigger_schema = 'test';
+# Time: 2017-07-20T17:09:52.221138Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    14
+# Query_time: 0.005320  Lock_time: 0.000895 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1500570592;
+select table_name, view_definition
+from information_schema.views
+where table_schema = 'test';
+# Time: 2017-07-20T17:09:52.250072Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    14
+# Query_time: 0.015606  Lock_time: 0.005295 Rows_sent: 0  Rows_examined: 48
+SET timestamp=1500570592;
+select specific_name, routine_definition
+from information_schema.routines
+where routine_schema = 'test';
+# Time: 2017-07-20T17:09:52.490005Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    14
+# Query_time: 0.225595  Lock_time: 0.001598 Rows_sent: 0  Rows_examined: 2
+SET timestamp=1500570592;
+select
+trigger_name,
+event_object_table,
+action_statement
+from information_schema.triggers
+where trigger_schema = 'test';
+# Time: 2017-07-20T17:10:41.595387Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.016645  Lock_time: 0.000208 Rows_sent: 5  Rows_examined: 10
+SET timestamp=1500570641;
+select schema_name as name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name;
+# Time: 2017-07-20T17:10:41.641381Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.025720  Lock_time: 0.000166 Rows_sent: 5  Rows_examined: 10
+SET timestamp=1500570641;
+select schema_name as name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name;
+# Time: 2017-07-20T17:10:41.654322Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.007875  Lock_time: 0.000153 Rows_sent: 61  Rows_examined: 61
+SET timestamp=1500570641;
+select table_name, table_type, table_comment
+from information_schema.tables
+where table_schema = 'information_schema';
+# Time: 2017-07-20T17:10:41.708806Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.038019  Lock_time: 0.003077 Rows_sent: 606  Rows_examined: 1212
+SET timestamp=1500570641;
+select
+ordinal_position,
+column_name,
+column_type,
+column_default,
+table_name,
+column_comment,
+is_nullable,
+extra
+from information_schema.columns
+where table_schema = 'information_schema'
+order by table_name, ordinal_position;
+# Time: 2017-07-20T17:10:41.734506Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.003708  Lock_time: 0.000250 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1500570641;
+select table_name, table_type, table_comment
+from information_schema.tables
+where table_schema = 'test';
+# Time: 2017-07-20T17:10:41.760356Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.010767  Lock_time: 0.000977 Rows_sent: 4  Rows_examined: 8
+SET timestamp=1500570641;
+select
+ordinal_position,
+column_name,
+column_type,
+column_default,
+table_name,
+column_comment,
+is_nullable,
+extra
+from information_schema.columns
+where table_schema = 'test'
+order by table_name, ordinal_position;
+# Time: 2017-07-20T17:10:41.801417Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.008827  Lock_time: 0.000166 Rows_sent: 0  Rows_examined: 2
+SET timestamp=1500570641;
+select
+  table_name,
+  index_name,
+  group_concat(column_name order by seq_in_index separator '\n') as column_names,
+  non_unique
+from information_schema.statistics
+where table_schema = 'test' and
+      index_schema = 'test' and
+      index_name <> 'PRIMARY'
+group by
+  table_catalog,
+  table_schema,
+  table_name,
+  index_name,
+  index_type,
+  non_unique;
+# Time: 2017-07-20T17:10:41.831739Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.023284  Lock_time: 0.012194 Rows_sent: 0  Rows_examined: 48
+SET timestamp=1500570641;
+select
+ specific_name,
+ routine_type,
+ routine_definition,
+ routine_comment,
+ dtd_identifier
+from information_schema.routines
+where routine_schema = 'test';
+# Time: 2017-07-20T17:10:41.914500Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.072727  Lock_time: 0.000176 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1500570641;
+select table_name from information_schema.tables
+where table_schema collate utf8_general_ci = 'information_schema' and table_name collate utf8_general_ci = 'parameters';
+# Time: 2017-07-20T17:10:41.923684Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.002682  Lock_time: 0.000743 Rows_sent: 0  Rows_examined: 83
+SET timestamp=1500570641;
+select specific_name,
+parameter_name,
+parameter_mode,
+dtd_identifier
+from information_schema.parameters
+where specific_schema = 'test' and ordinal_position > 0
+order by specific_name, ordinal_position;
+# Time: 2017-07-20T17:10:42.238354Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.308356  Lock_time: 0.000200 Rows_sent: 2  Rows_examined: 12
+SET timestamp=1500570642;
+select
+  c.constraint_name,
+  c.table_name,
+  c.constraint_type,
+  group_concat(u.column_name order by u.ordinal_position separator '\n' ) as column_names,
+  u.referenced_table_schema,
+  u.referenced_table_name,
+  group_concat(u.referenced_column_name order by u.position_in_unique_constraint separator '\n') as ref_column_names,
+  r.match_option,
+  r.update_rule,
+  r.delete_rule
+from information_schema.table_constraints c
+  left join information_schema.key_column_usage u on
+      u.constraint_schema   = c.constraint_schema
+  and u.constraint_name     = c.constraint_name
+  and u.table_name = c.table_name
+  and u.table_schema = 'test'
+  and ((c.constraint_type = 'UNIQUE' and u.referenced_table_name is null) or c.constraint_type <> 'UNIQUE')
+  left join information_schema.referential_constraints r on
+      r.constraint_schema   = c.constraint_schema
+  and r.constraint_name     = c.constraint_name
+where c.table_schema = 'test'
+  and u.table_schema = 'test'
+group by
+    c.constraint_schema
+  , c.constraint_name
+  , c.table_schema
+  , c.table_name
+  , c.constraint_type
+  , u.referenced_table_schema
+  , u.referenced_table_name
+  , r.match_option
+  , r.update_rule
+  , r.delete_rule
+order by
+    c.table_schema
+  , c.table_name
+  , c.constraint_schema
+  , c.constraint_name;
+# Time: 2017-07-20T17:10:42.426841Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.178867  Lock_time: 0.000806 Rows_sent: 0  Rows_examined: 2
+SET timestamp=1500570642;
+select
+trigger_name,
+event_object_table,
+event_manipulation,
+action_timing
+from information_schema.triggers
+where trigger_schema = 'test';
+# Time: 2017-07-20T17:10:42.452533Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.005631  Lock_time: 0.001433 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1500570642;
+select table_name, view_definition
+from information_schema.views
+where table_schema = 'test';
+# Time: 2017-07-20T17:10:42.502046Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.032595  Lock_time: 0.017606 Rows_sent: 0  Rows_examined: 48
+SET timestamp=1500570642;
+select specific_name, routine_definition
+from information_schema.routines
+where routine_schema = 'test';
+# Time: 2017-07-20T17:10:42.796794Z
+# User@Host: root[root] @  [172.17.0.1]  Id:    15
+# Query_time: 0.286295  Lock_time: 0.009347 Rows_sent: 0  Rows_examined: 2
+SET timestamp=1500570642;
+select
+trigger_name,
+event_object_table,
+action_statement
+from information_schema.triggers
+where trigger_schema = 'test';
+mysqld, Version: 5.7.18-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2017-07-24T06:46:54.695634Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     4
+# Query_time: 0.041234  Lock_time: 0.001317 Rows_sent: 5  Rows_examined: 10
+SET timestamp=1500878814;
+select schema_name as name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name;
+# Time: 2017-07-24T06:46:54.737832Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     4
+# Query_time: 0.002778  Lock_time: 0.000097 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1500878814;
+select table_name, table_type, table_comment
+from information_schema.tables
+where table_schema = 'test';
+# Time: 2017-07-24T06:46:54.757660Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     4
+# Query_time: 0.003359  Lock_time: 0.000775 Rows_sent: 3  Rows_examined: 6
+SET timestamp=1500878814;
+select
+ordinal_position,
+column_name,
+column_type,
+column_default,
+table_name,
+column_comment,
+is_nullable,
+extra
+from information_schema.columns
+where table_schema = 'test'
+order by table_name, ordinal_position;
+# Time: 2017-07-24T06:46:54.871165Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     4
+# Query_time: 0.030011  Lock_time: 0.000421 Rows_sent: 0  Rows_examined: 1
+SET timestamp=1500878814;
+select
+  table_name,
+  index_name,
+  group_concat(column_name order by seq_in_index separator '\n') as column_names,
+  non_unique
+from information_schema.statistics
+where table_schema = 'test' and
+      index_schema = 'test' and
+      index_name <> 'PRIMARY'
+group by
+  table_catalog,
+  table_schema,
+  table_name,
+  index_name,
+  index_type,
+  non_unique;
+# Time: 2017-07-24T06:46:54.925666Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     4
+# Query_time: 0.030945  Lock_time: 0.009299 Rows_sent: 0  Rows_examined: 48
+SET timestamp=1500878814;
+select
+ specific_name,
+ routine_type,
+ routine_definition,
+ routine_comment,
+ dtd_identifier
+from information_schema.routines
+where routine_schema = 'test';
+# Time: 2017-07-24T06:46:55.083830Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     4
+# Query_time: 0.069676  Lock_time: 0.000381 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1500878815;
+select table_name from information_schema.tables
+where table_schema collate utf8_general_ci = 'information_schema' and table_name collate utf8_general_ci = 'parameters';
+# Time: 2017-07-24T06:46:55.105973Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     4
+# Query_time: 0.003962  Lock_time: 0.000853 Rows_sent: 0  Rows_examined: 83
+SET timestamp=1500878815;
+select specific_name,
+parameter_name,
+parameter_mode,
+dtd_identifier
+from information_schema.parameters
+where specific_schema = 'test' and ordinal_position > 0
+order by specific_name, ordinal_position;
+# Time: 2017-07-24T06:46:55.363050Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     4
+# Query_time: 0.225064  Lock_time: 0.001071 Rows_sent: 1  Rows_examined: 6
+SET timestamp=1500878815;
+select
+  c.constraint_name,
+  c.table_name,
+  c.constraint_type,
+  group_concat(u.column_name order by u.ordinal_position separator '\n' ) as column_names,
+  u.referenced_table_schema,
+  u.referenced_table_name,
+  group_concat(u.referenced_column_name order by u.position_in_unique_constraint separator '\n') as ref_column_names,
+  r.match_option,
+  r.update_rule,
+  r.delete_rule
+from information_schema.table_constraints c
+  left join information_schema.key_column_usage u on
+      u.constraint_schema   = c.constraint_schema
+  and u.constraint_name     = c.constraint_name
+  and u.table_name = c.table_name
+  and u.table_schema = 'test'
+  and ((c.constraint_type = 'UNIQUE' and u.referenced_table_name is null) or c.constraint_type <> 'UNIQUE')
+  left join information_schema.referential_constraints r on
+      r.constraint_schema   = c.constraint_schema
+  and r.constraint_name     = c.constraint_name
+where c.table_schema = 'test'
+  and u.table_schema = 'test'
+group by
+    c.constraint_schema
+  , c.constraint_name
+  , c.table_schema
+  , c.table_name
+  , c.constraint_type
+  , u.referenced_table_schema
+  , u.referenced_table_name
+  , r.match_option
+  , r.update_rule
+  , r.delete_rule
+order by
+    c.table_schema
+  , c.table_name
+  , c.constraint_schema
+  , c.constraint_name;
+# Time: 2017-07-24T06:46:55.733409Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     4
+# Query_time: 0.353559  Lock_time: 0.000855 Rows_sent: 0  Rows_examined: 2
+SET timestamp=1500878815;
+select
+trigger_name,
+event_object_table,
+event_manipulation,
+action_timing
+from information_schema.triggers
+where trigger_schema = 'test';
+# Time: 2017-07-24T06:46:55.752553Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     4
+# Query_time: 0.005168  Lock_time: 0.002280 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1500878815;
+select table_name, view_definition
+from information_schema.views
+where table_schema = 'test';
+# Time: 2017-07-24T06:46:55.779692Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     4
+# Query_time: 0.017361  Lock_time: 0.009756 Rows_sent: 0  Rows_examined: 48
+SET timestamp=1500878815;
+select specific_name, routine_definition
+from information_schema.routines
+where routine_schema = 'test';
+# Time: 2017-07-24T06:46:56.138500Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     4
+# Query_time: 0.343650  Lock_time: 0.000949 Rows_sent: 0  Rows_examined: 2
+SET timestamp=1500878816;
+select
+trigger_name,
+event_object_table,
+action_statement
+from information_schema.triggers
+where trigger_schema = 'test';
+# Time: 2017-07-24T06:47:04.498924Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.026120  Lock_time: 0.000130 Rows_sent: 5  Rows_examined: 10
+SET timestamp=1500878824;
+select schema_name as name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name;
+# Time: 2017-07-24T06:47:04.537792Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.005454  Lock_time: 0.000216 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1500878824;
+select table_name, table_type, table_comment
+from information_schema.tables
+where table_schema = 'test';
+# Time: 2017-07-24T06:47:04.558256Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.006043  Lock_time: 0.001341 Rows_sent: 3  Rows_examined: 6
+SET timestamp=1500878824;
+select
+ordinal_position,
+column_name,
+column_type,
+column_default,
+table_name,
+column_comment,
+is_nullable,
+extra
+from information_schema.columns
+where table_schema = 'test'
+order by table_name, ordinal_position;
+# Time: 2017-07-24T06:47:04.591809Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.005611  Lock_time: 0.000332 Rows_sent: 0  Rows_examined: 1
+SET timestamp=1500878824;
+select
+  table_name,
+  index_name,
+  group_concat(column_name order by seq_in_index separator '\n') as column_names,
+  non_unique
+from information_schema.statistics
+where table_schema = 'test' and
+      index_schema = 'test' and
+      index_name <> 'PRIMARY'
+group by
+  table_catalog,
+  table_schema,
+  table_name,
+  index_name,
+  index_type,
+  non_unique;
+# Time: 2017-07-24T06:47:04.617827Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.012914  Lock_time: 0.003910 Rows_sent: 0  Rows_examined: 48
+SET timestamp=1500878824;
+select
+ specific_name,
+ routine_type,
+ routine_definition,
+ routine_comment,
+ dtd_identifier
+from information_schema.routines
+where routine_schema = 'test';
+# Time: 2017-07-24T06:47:04.679282Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.055727  Lock_time: 0.000118 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1500878824;
+select table_name from information_schema.tables
+where table_schema collate utf8_general_ci = 'information_schema' and table_name collate utf8_general_ci = 'parameters';
+# Time: 2017-07-24T06:47:04.709813Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.008417  Lock_time: 0.001445 Rows_sent: 0  Rows_examined: 83
+SET timestamp=1500878824;
+select specific_name,
+parameter_name,
+parameter_mode,
+dtd_identifier
+from information_schema.parameters
+where specific_schema = 'test' and ordinal_position > 0
+order by specific_name, ordinal_position;
+# Time: 2017-07-24T06:47:05.064608Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.328509  Lock_time: 0.000416 Rows_sent: 1  Rows_examined: 6
+SET timestamp=1500878825;
+select
+  c.constraint_name,
+  c.table_name,
+  c.constraint_type,
+  group_concat(u.column_name order by u.ordinal_position separator '\n' ) as column_names,
+  u.referenced_table_schema,
+  u.referenced_table_name,
+  group_concat(u.referenced_column_name order by u.position_in_unique_constraint separator '\n') as ref_column_names,
+  r.match_option,
+  r.update_rule,
+  r.delete_rule
+from information_schema.table_constraints c
+  left join information_schema.key_column_usage u on
+      u.constraint_schema   = c.constraint_schema
+  and u.constraint_name     = c.constraint_name
+  and u.table_name = c.table_name
+  and u.table_schema = 'test'
+  and ((c.constraint_type = 'UNIQUE' and u.referenced_table_name is null) or c.constraint_type <> 'UNIQUE')
+  left join information_schema.referential_constraints r on
+      r.constraint_schema   = c.constraint_schema
+  and r.constraint_name     = c.constraint_name
+where c.table_schema = 'test'
+  and u.table_schema = 'test'
+group by
+    c.constraint_schema
+  , c.constraint_name
+  , c.table_schema
+  , c.table_name
+  , c.constraint_type
+  , u.referenced_table_schema
+  , u.referenced_table_name
+  , r.match_option
+  , r.update_rule
+  , r.delete_rule
+order by
+    c.table_schema
+  , c.table_name
+  , c.constraint_schema
+  , c.constraint_name;
+# Time: 2017-07-24T06:47:05.533236Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.456542  Lock_time: 0.001237 Rows_sent: 0  Rows_examined: 2
+SET timestamp=1500878825;
+select
+trigger_name,
+event_object_table,
+event_manipulation,
+action_timing
+from information_schema.triggers
+where trigger_schema = 'test';
+# Time: 2017-07-24T06:47:05.547753Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.006278  Lock_time: 0.001052 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1500878825;
+select table_name, view_definition
+from information_schema.views
+where table_schema = 'test';
+# Time: 2017-07-24T06:47:05.574833Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.017625  Lock_time: 0.009921 Rows_sent: 0  Rows_examined: 48
+SET timestamp=1500878825;
+select specific_name, routine_definition
+from information_schema.routines
+where routine_schema = 'test';
+# Time: 2017-07-24T06:47:05.889872Z
+# User@Host: root[root] @  [172.17.0.1]  Id:     6
+# Query_time: 0.301460  Lock_time: 0.001540 Rows_sent: 0  Rows_examined: 2
+SET timestamp=1500878825;
+select
+trigger_name,
+event_object_table,
+action_statement
+from information_schema.triggers
+where trigger_schema = 'test';

@@ -1,0 +1,64 @@
+data:
+  image: busybox:latest
+  volumes:
+    - ./www:/app:ro
+  entrypoint: top
+
+php-fpm:
+    build: ./php
+    volumes_from:
+        - data
+    volumes:
+        - ./php/etc/php/php.ini:/usr/local/etc/php/php.ini:ro
+        - ./php/etc/php-fpm.conf:/usr/local/etc/php-fpm.conf:ro
+        - ./php/etc/php-fpm.d:/usr/local/etc/php-fpm.d:ro
+        - ./php/logs:/usr/local/var/log
+    expose:
+        - 9000
+    links:
+        - mysql:mysql
+        - mongo:mongo
+        - memcached:memcached
+        - redis:redis
+    environment:
+        XDEBUG_CONFIG: "idekey=PHPSTORM remote_enable=On remote_connect_back=On"
+
+nginx:
+    build: ./nginx
+    ports:
+        - "80:80"
+        - "443:443"
+    volumes_from:
+        - data
+    volumes:
+        #- ./www:/usr/share/nginx/html:ro
+        - ./nginx/etc:/etc/nginx/:ro
+        - ./nginx/logs:/var/log/nginx
+    links:
+        - php-fpm
+
+mysql:
+    build: ./mysql
+    volumes:
+        - ./mysql/data:/var/lib/mysql
+        - ./mysql/etc:/etc/mysql/conf.d:ro
+        - ./mysql/logs:/var/log/mysql
+    ports:
+        - "3306:3306"
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+
+mongo:
+    image: mongo
+    ports:
+        - "27017:27017"
+
+memcached:
+    image: memcached
+    ports:
+        - "11211:11211"
+
+redis:
+    image: redis
+    ports:
+        - "6379:6379"
