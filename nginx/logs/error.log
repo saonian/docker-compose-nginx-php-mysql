@@ -1,6 +1,0 @@
-2017/09/20 14:57:37 [emerg] 1#1: open() "/etc/nginx/mime.types" failed (2: No such file or directory) in /etc/nginx/nginx.conf:15
-2017/09/20 15:00:39 [emerg] 1#1: open() "/etc/nginx/mime.types" failed (2: No such file or directory) in /etc/nginx/nginx.conf:15
-2017/09/20 15:07:56 [emerg] 1#1: open() "/etc/nginx/mime.types" failed (2: No such file or directory) in /etc/nginx/nginx.conf:15
-2017/09/20 15:10:14 [emerg] 1#1: open() "/etc/nginx/fastcgi_params" failed (2: No such file or directory) in /etc/nginx/conf.d/test.conf:16
-2017/09/20 15:14:27 [error] 5#5: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
-2017/09/20 15:15:45 [error] 5#5: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
