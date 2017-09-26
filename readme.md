@@ -4,9 +4,9 @@
 
 ## 注意
 
-1. 最好配置一个国内镜像，方便下载
+1. 最好配置一个Docker国内镜像，方便下载
 
-2. 需要注意的是php-fpm.com和www.conf文件里的配置：
+2. 需要注意的是php-fpm.cnf和www.conf文件里的配置：
 
    `daemonize = no` - 否则根据docker特性PHP容器刚启动就会自动停止
 
