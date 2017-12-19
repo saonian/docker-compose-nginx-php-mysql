@@ -1,7 +1,7 @@
 data:
   image: busybox:latest
   volumes:
-    - ./www:/app:ro
+    - ./www:/app:rw
   entrypoint: top
 
 php-fpm:
@@ -28,6 +28,7 @@ nginx:
     ports:
         - "80:80"
         - "443:443"
+        - "8888:8888"
     volumes_from:
         - data
     volumes:
