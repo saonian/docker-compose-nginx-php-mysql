@@ -22,6 +22,8 @@ RUN apt-get update && apt-get install -y \
         unzip \
         openssl \
         libssl-dev \
+        vim \
+        cron \
     && docker-php-ext-install -j$(nproc) iconv mcrypt mysqli pdo pdo_mysql mbstring tokenizer xml sockets soap curl hash opcache intl \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install -j$(nproc) gd
