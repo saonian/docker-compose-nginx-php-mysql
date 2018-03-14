@@ -1,0 +1,4 @@
+www/*
+!www/test/
+nginx/etc/conf.d/*
+!nginx/etc/conf.d/test.conf
