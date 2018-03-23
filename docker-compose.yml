@@ -28,7 +28,6 @@ nginx:
     ports:
         - "80:80"
         - "443:443"
-        - "8888:8888"
     volumes_from:
         - data
     volumes:
@@ -51,6 +50,8 @@ mysql:
 
 mongo:
     image: mongo
+    volumes:
+        - ./mongodb/data:/data/db:rw
     ports:
         - "27017:27017"
 
