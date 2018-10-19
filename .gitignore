@@ -1,4 +1,6 @@
 www/*
 !www/test/
+www-node/*
+!.gitkeep
 nginx/etc/conf.d/*
 !nginx/etc/conf.d/test.conf

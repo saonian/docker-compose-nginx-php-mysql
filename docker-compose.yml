@@ -2,6 +2,7 @@ data:
   image: busybox:latest
   volumes:
     - ./www:/app:rw
+    - ./www-node:/app-node:rw
   entrypoint: top
 
 php-fpm:
@@ -23,6 +24,22 @@ php-fpm:
     environment:
         XDEBUG_CONFIG: "idekey=PHPSTORM remote_enable=On remote_connect_back=On"
 
+node:
+    build: ./node
+    user: "node"
+    working_dir: /app-node/nideshop
+    environment:
+        - NODE_ENV=production
+    volumes_from:
+        - data
+    expose:
+        - "8360"
+    ports:
+        - "8360:8360"
+    links:
+        - mysql:mysql
+    command: "npm start"
+
 nginx:
     build: ./nginx
     ports:
@@ -36,6 +53,7 @@ nginx:
         - ./nginx/logs:/var/log/nginx
     links:
         - php-fpm
+        - node
 
 mysql:
     build: ./mysql
