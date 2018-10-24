@@ -36,6 +36,7 @@ node:
         - "8360:8360"
     links:
         - mysql:mysql
+    command: pm2-runtime start ecosystem.config.js
 
 nginx:
     build: ./nginx
