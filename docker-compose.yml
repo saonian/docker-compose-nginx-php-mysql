@@ -26,7 +26,6 @@ php-fpm:
 
 node:
     build: ./node
-    user: "node"
     working_dir: /app-node/nideshop
     volumes_from:
         - data
@@ -37,7 +36,6 @@ node:
         - "8360:8360"
     links:
         - mysql:mysql
-    command: "npm start"
 
 nginx:
     build: ./nginx
