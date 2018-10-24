@@ -28,11 +28,10 @@ node:
     build: ./node
     user: "node"
     working_dir: /app-node/nideshop
-    environment:
-        - NODE_ENV=production
     volumes_from:
         - data
     expose:
+        # 应用程序端口
         - "8360"
     ports:
         - "8360:8360"
